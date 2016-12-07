@@ -2,9 +2,10 @@
   "name": "ct",
   "description": "",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bulma": "^0.2.3",
     "node-sass": "^3.11.2",
     "nuxt": "latest",
+    "ramda": "^0.22.1",
     "sass-loader": "^4.0.2"
   },
   "scripts": {
