@@ -11,7 +11,7 @@ import _ from 'ramda'
 import Articles from '~store/articles'
 
 const handleNotFound = (error) => _.when(_.isNil, () => {
-  return error({ message: 'Page not found', statusCode: 404 })
+  return error({ message: 'Page  on trouvee', statusCode: 404 })
 })
 
 export default {

@@ -1,8 +1,8 @@
 const { join } = require('path')
+const routeParams = require('./config/routes')
 
 module.exports = {
   router: {
-// routes: _.map(route => ({path, component:'pages/_article'}), Articles.getPaths())
     routes: [
       { path: '/:slug', component: 'pages/_article' }
     ]
@@ -20,6 +20,9 @@ module.exports = {
   },
   css: [
     { src: 'bulma', lang: 'sass' },
-    join(__dirname, 'css/main.css')
-  ]
+    { src: join(__dirname, 'css/main.sass'), lang: 'sass' }
+  ],
+  generate: {
+    routeParams: routeParams
+  }
 }
